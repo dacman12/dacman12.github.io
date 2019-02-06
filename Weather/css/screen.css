@@ -1,0 +1,25 @@
+/* THis is the style sheet for the weather sit */
+
+/* Tabel of contents:
+1. Imports
+2. General Rules
+3. Mobile First Rules
+4. Larger Screen Rules */
+
+/* Section 1 - Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css');
+
+/* section 2 - General Rules */
+header{
+    background-color: #0e89d5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Sansita', sans-serif;
+}
+
+body{
+
+    font-family: Helvetica, Arial, sans-serif;
+}
