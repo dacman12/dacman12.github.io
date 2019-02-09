@@ -12,13 +12,10 @@
 
 /* section 2 - General Rules */
 header {
-
+    width: 50%;
     height: 100px;
     background-color: #0e89d5;
-    <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo"> {
-        width: 10px;
-    }
-
+    
 }
 
 h1,h2,h3,h4,h5,h6 {
