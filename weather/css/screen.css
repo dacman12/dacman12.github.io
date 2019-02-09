@@ -11,22 +11,36 @@
 @import url('normalize.css');
 
 /* section 2 - General Rules */
-header{
+header {
+    
+     height: 100px;
+    width: 50%;
     background-color: #0e89d5;
+    .container {
+        width: 20px;
+        height: 12px;
+    }
+    
+    /* resize images */
+    .container img {
+        width: 200px;
+        height: 100px;
+    }
+
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Sansita', sans-serif;
 }
 
-body{
+body {
     /* font-size:1.5em; same as font-size: 18px */
-    font-size:18px;
+    font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFF;
 }
 
-footer{
+footer {
     background-color: #0e89d5;
 }
 
