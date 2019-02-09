@@ -45,5 +45,11 @@ footer {
     width: 50px;
     height: auto;
 }
+.high {
+    color: red
+}
+.low{
+    color: steelblue
+}
 
 /* Section 4 - Larger Screens */
