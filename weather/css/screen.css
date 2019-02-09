@@ -15,7 +15,6 @@ header {
     width: 50%;
     height: 100px;
     background-color: #0e89d5;
-    
 
 }
 
@@ -36,5 +35,15 @@ footer {
 
 /* Section 3 -Mobile First Rules */
 
+.container {
+    width: 400px;
+    height: 120px;
+}
+
+/* resize images */
+.container img {
+    width: 50px;
+    height: auto;
+}
 
 /* Section 4 - Larger Screens */
