@@ -12,19 +12,11 @@
 
 /* section 2 - General Rules */
 header {
-    
-     height: 100px;
-    width: 50%;
+
+    height: 100px;
     background-color: #0e89d5;
-    .container {
-        width: 20px;
-        height: 12px;
-    }
-    
-    /* resize images */
-    .container img {
-        width: 200px;
-        height: 100px;
+    <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo"> {
+        width: 10px;
     }
 
 }
