@@ -12,8 +12,8 @@
 
 /* section 2 - General Rules */
 header {
-    width: 50%;
-    height: 100px;
+    width: 17%;
+    height: 50px;
     background-color: #0e89d5;
 
 
@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
     /* font-size:1.5em; same as font-size: 18px */
-    font-size: 12px;
+    font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFF;
 }
@@ -58,14 +58,14 @@ footer {
     width: 50px;
     height: auto;
 }
-.wind img {
+#wind img {
     width: 100px;
     height: auto;
 }
-.high {
+#high {
     color: red
 }
-.low{
+#low{
     color: steelblue
 }
 .rain img {
