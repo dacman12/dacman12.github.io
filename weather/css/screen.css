@@ -16,6 +16,7 @@ header {
     height: 100px;
     background-color: #0e89d5;
 
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -24,7 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
     /* font-size:1.5em; same as font-size: 18px */
-    font-size: 18px;
+    font-size: 12px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFF;
 }
@@ -39,10 +40,26 @@ footer {
     width: 400px;
     height: 120px;
 }
+    .logo {
+        float: left;
+        max-width: 60px;
+    }
+    #site-brand{
+        font-size: 2em;
+        margin-top: 0%;
+        margin-left: 10px;
+        display: inline;
+        font-weight: 600;
+    }
+
 
 /* resize images */
 .container img {
     width: 50px;
+    height: auto;
+}
+.wind img {
+    width: 100px;
     height: auto;
 }
 .high {
@@ -50,6 +67,9 @@ footer {
 }
 .low{
     color: steelblue
+}
+.rain img {
+    width: 100px;
 }
 
 /* Section 4 - Larger Screens */
