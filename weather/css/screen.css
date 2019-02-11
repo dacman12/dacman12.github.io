@@ -12,8 +12,9 @@
 
 /* section 2 - General Rules */
 header {
-    width: 17%;
-    height: 50px;
+    width: 100%;
+    height: 100px;
+    font-size: 48px;
     background-color: #0e89d5;
 
 
@@ -28,6 +29,7 @@ body {
     font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #FFF;
+    background-image: src = "weather-site-images/images/rain.jpg";
 }
 
 footer {
@@ -37,12 +39,12 @@ footer {
 /* Section 3 -Mobile First Rules */
 
 .container {
-    width: 400px;
+    width: 4000px;
     height: 120px;
 }
     .logo {
         float: left;
-        max-width: 60px;
+        max-width: 100px;
     }
     #site-brand{
         font-size: 2em;
@@ -54,7 +56,7 @@ footer {
 
 /* resize images */
 .container img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 #wind img {
