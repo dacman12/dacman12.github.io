@@ -9,55 +9,60 @@
    <!-- <meta name = "screen.css" content="/css/screen.css"> -->
    <link href="/weather/css/screen.css" rel="stylesheet" type="text/css">
 </head>
-<header>
-   <div class="container">
+
+<body>
+   <header class="page-head">
       <img src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
       <!-- <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo">  -->
-      <strong> The Weather Site</strong>
-   </div>
-</header>
-<nav>
+      <strong> The Weather Site </strong>
 
-   <a href="Content " title="content">Content</a>
-   <a href="Search" title="Read Me">Read</a>
-   <a href="franklinWebPage.html" title="Frankling">Franklin</a>
-   <a href="Greenville.html" title="Greenville">Greenville</a><br>
-</nav>
-<h1>Franklin, ID</h1>
-<section>
-   <strong>Zip: </strong>83237|
-   <strong>Elevation: </strong> 1514.246 ft|
-   <strong>Location</strong> 111.79 &deg; N, 42.07 &deg; W
-</section>
+   </header>
+   <nav class="page-nav">
 
-<main>
-   <h2><strong>Temperature</strong></h2>
-   <p>
-      <span id="high">64&deg;F</span>
-      <span id="low">41&deg;F</span>
-      <span id="feels">Feels like 40&deg;F</span>
-   </p>
-   <div class = "wind">
-   <h2><strong>Wind</strong></h2>
-   <img src="/weather/weather-site-images/images/wind-pointer.png" alt="Wind Pointer">
-   <ul>
-      <li>5 MPH</li>
-      <li><strong>Direction</strong> SW</li>
-      <li><strong>Gusts</strong> 10 - 12 MPH</li>
-   </ul>
-   </div>
-   <div class="rain">
-      <h2><strong>Rain</strong></h2>
-      <img src="weather-site-images/images/rain.jpg" alt="Rain">
-   </div>
-   <h2><strong>Hourly Forcast</strong></h2>
-   <section>
-      10 am: 41 &deg;F 11 am: 41 &deg;F 12 pm: 41 &deg;F 1 pm: 41 &deg;F 2 pm: 41 &deg;F 3 pm: 41 &deg;F 4 pm: 42
-      &deg;F 5 pm: 44 &deg;F 6 pm: 44 &deg;F 7 pm: 46 &deg;F 8 pm: 49 &deg;F 9 pm: 51 &deg;F 10 pm: 55 &deg;F
+      <a href="Content " title="content">Content</a>
+      <a href="Search" title="Read Me">Read</a>
+      <a href="franklinWebPage.html" title="Frankling">Franklin</a>
+      <a href="Greenville.html" title="Greenville">Greenville</a><br>
+   </nav>
+
+   <section class = "location-information">
+      <h1>Franklin, ID</h1>
+      <strong>Zip: </strong>83237|
+      <strong>Elevation: </strong> 1514.246 ft|
+      <strong>Location</strong> 111.79 &deg; N, 42.07 &deg; W
    </section>
-</main>
-<footer>
-   &copy;2019 &mdash; The Weather Site
-</footer>
+
+   <main class="page-main">
+      <h2><strong>Temperature</strong></h2>
+      <p>
+         <span id="high">64&deg;F</span>
+         <span id="low">41&deg;F</span>
+         <span id="feels">Feels like 40&deg;F</span>
+      </p>
+      <section class="wind">
+         <h2><strong>Wind</strong></h2>
+         <img src="/weather/weather-site-images/images/wind-pointer.png" alt="Wind Pointer">
+         <ul>
+            <li>5 MPH</li>
+            <li><strong>Direction</strong> SW</li>
+            <li><strong>Gusts</strong> 10 - 12 MPH</li>
+         </ul>
+      </section>
+
+      <section class="weather">
+         <h2><strong>Rain</strong></h2>
+         <img src="weather-site-images/images/rain.jpg" alt="Rain">
+      </section>
+
+      <section class = "hourly">     
+      <h2><strong>Hourly Forcast</strong></h2>
+         10 am: 41 &deg;F 11 am: 41 &deg;F 12 pm: 41 &deg;F 1 pm: 41 &deg;F 2 pm: 41 &deg;F 3 pm: 41 &deg;F 4 pm: 42
+         &deg;F 5 pm: 44 &deg;F 6 pm: 44 &deg;F 7 pm: 46 &deg;F 8 pm: 49 &deg;F 9 pm: 51 &deg;F 10 pm: 55 &deg;F
+      </section>
+   </main>
+   <footer>
+      &copy;2019 &mdash; The Weather Site
+   </footer>
+</body>
 
 </html>
