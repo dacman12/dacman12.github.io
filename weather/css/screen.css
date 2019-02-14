@@ -35,7 +35,12 @@ body {
 
 }
 #page-main{
-    
+    .tile{
+        background-color: rgba(200,200,200,.6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 15px;
+      }
 }
 #weather img {
     background-image: "weather-site-images/images/rain.jpg";
