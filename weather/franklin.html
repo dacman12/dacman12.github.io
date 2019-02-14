@@ -12,55 +12,75 @@
 
 <body>
    <header id="page-head">
-      <img src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
+      <img id = "logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
       <!-- <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo">  -->
-      <strong> The Weather Site </strong>
+      <h2 id = "heading"><strong> The Weather Site </strong></h2>
 
    </header>
    <nav id="page-nav">
-
-      <a href="Content " title="content">Content</a>
-      <a href="Search" title="Read Me">Read</a>
-      <a href="franklinWebPage.html" title="Frankling">Franklin</a>
-      <a href="Greenville.html" title="Greenville">Greenville</a><br>
+      <ul>
+         <li><a href="Content " title="content">Content</a></li>
+         <li><a href="Search" title="Read Me">Read</a></li>
+         <li><a href="franklinWebPage.html" title="Frankling">Franklin</a></li>
+         <li><a href="Greenville.html" title="Greenville">Greenville</a></li>
+      </ul>
    </nav>
 
    <section id="location-information">
       <h1>Franklin, ID</h1>
-      <strong>Zip: </strong>83237|
-      <strong>Elevation: </strong> 1514.246 ft|
-      <strong>Location</strong> 111.79 &deg; N, 42.07 &deg; W
+       <ul>  
+         <li><strong>Zip: </strong>83237| </li>
+         <li><strong>Elevation: </strong> 1514.246 ft| </li>
+         <li><strong>Location</strong> 111.79 &deg; N, 42.07 &deg; W</li>
+      </ul> 
    </section>
 
-   <main id="page-main"> 
-      <section id = "temp", class="tile">
-         <h2><strong>Temperature</strong></h2>
-         <p>
-            <span id="high">64&deg;F</span>
-            <span id="low">41&deg;F</span>
-            <span id="feels">Feels like 40&deg;F</span>
-         </p>
-      </section>
+   <main id="page-main">
+      <div id="current_weather">
+         <section class="tile">
+            <h2><strong>Temperature</strong></h2>
+            <p id = "current-temp">40&deg;F</p>
+            <p>
+               <span id="high">64&deg;F</span>
+               <span id="low">41&deg;F</span>
+               <span id="feels">Feels like 40&deg;F</span>
+            </p>
+         </section>
 
-      <section id = "wind", class="tile">
-         <h2><strong>Wind</strong></h2>
-         <img src="/weather/weather-site-images/images/wind-pointer.png" alt="Wind Pointer">
-         <ul class = "speed">
-            <li>5 MPH</li>
-            <li><strong>Direction</strong> SW</li>
-            <li><strong>Gusts</strong> 10 - 12 MPH</li>
-         </ul>
-      </section>
+         <section class="tile">
+            <h2><strong>Wind</strong></h2>
+            <img src="/weather/weather-site-images/images/wind-pointer.png" alt="Wind Pointer">
+            <ul class="speed">
+               <li>5 MPH</li>
+               <li><strong>Direction</strong> SW</li>
+               <li><strong>Gusts</strong> 10 - 12 MPH</li>
+            </ul>
+         </section>
 
-      <section id = "weather", class="tile">
-         <h2><strong>Rain</strong></h2>
-         <img src="weather-site-images/images/rain.jpg" alt="Rain">
-      </section>
+         <section class="tile">
+            <h2><strong>Rain</strong></h2>
+            <img id="rainn" src="weather-site-images/images/rain.jpg" alt="Rain">
+         </section>
+      </div>
 
       <section id="hourly">
          <h2><strong>Hourly Forcast</strong></h2>
-         10 am: 41 &deg;F 11 am: 41 &deg;F 12 pm: 41 &deg;F 1 pm: 41 &deg;F 2 pm: 41 &deg;F 3 pm: 41 &deg;F 4 pm: 42
-         &deg;F 5 pm: 44 &deg;F 6 pm: 44 &deg;F 7 pm: 46 &deg;F 8 pm: 49 &deg;F 9 pm: 51 &deg;F 10 pm: 55 &deg;F
+         <ul>
+            <li>10 am: 41 &deg;F |</li>
+            <li>11 am: 41 &deg;F |</li>
+            <li>12 pm: 41 &deg;F |</li>
+            <li>1 pm: 41 &deg;F |</li>
+            <li>2 pm: 41 &deg;F |</li>
+            <li>3 pm: 41 &deg;F |</li>
+            <li>4 pm: 42&deg;F |</li>
+            <li>5 pm: 44 &deg;F |</li>
+            <li>6 pm: 44 &deg;F |</li>
+            <li>7 pm: 46 &deg;F |</li>
+            <li>8 pm: 49 &deg;F |</li>
+            <li>9 pm: 51 &deg;F |</li>
+            <li>10 pm: 55 &deg;F |</li>
+         </ul>
+             
       </section>
    </main>
    <footer>
