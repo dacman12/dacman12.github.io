@@ -18,7 +18,12 @@ header {
     background-color: #0e89d5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Sansita', sans-serif;
 }
 
@@ -29,32 +34,32 @@ body {
     background-color: #FFF;
 
 }
-    #weather img{
-       background-image: "weather-site-images/images/rain.jpg"; 
-       max-width: 100%;
-    }
+#page-main{
     
+}
+#weather img {
+    background-image: "weather-site-images/images/rain.jpg";
+    max-width: 100%;
+}
+
 footer {
     background-color: #0e89d5;
 }
 
 /* Section 3 -Mobile First Rules */
 
-.container {
-    width: 400px;
-    height: 200px;
+#page-head{
+    display: flex;
+
 }
-    #logo {
-        float: left;
-        max-width: 10px;
-        max-height: 10px;
-    }
-    #site-brand{
-        font-size: 2em;
-        margin-left: 10px;
-        display: inline;
-        font-weight: 60;
-    }
+
+#page-nav{
+    align-content: flex-end
+}
+
+#location-information {
+flex-wrap: wrap
+}
 
 
 /* resize images */
@@ -62,20 +67,20 @@ footer {
     width: 100px;
     height: 100px;
 }
-#wind img {
+
+#weather img {
     width: 100px;
     height: auto;
 }
+
 #high {
     color: red
 }
-#low{
+
+#low {
     color: steelblue
 }
-#weather img {
-    width: 10px;
-    height: auto;
-}
+
 
 
 
