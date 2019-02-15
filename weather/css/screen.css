@@ -69,7 +69,16 @@ body {
 }
 
 #mph {
-    justify-content: flex-start;
+    font-size: 28px;
+    margin-top: -120px;
+    margin-right: 40px;
+    align-content: center;
+}
+
+#direction{
+align-content: center;
+align-content: flex-end;
+margin-top: 80px;
 }
 
 .tile {
