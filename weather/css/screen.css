@@ -16,17 +16,18 @@
     display: flex;
 }
 
-#heading{
+#heading {
     font-size: 30px;
     margin: 0px;
     align-self: center;
 }
-h1{
+
+h1 {
     margin: 0;
 }
 
-#location-information ul{
-    margin:0px;
+#location-information ul {
+    margin: 0px;
     padding: 0px;
     padding-left: 0px;
     display: flex;
@@ -35,19 +36,17 @@ h1{
     list-style: none;
     font-size: 12px;
 }
-#logo{
+
+#logo {
+    justify-content: flex-start;
     margin-left: 3px;
-    margin-top:3px;
+    margin-top: 3px;
     margin: 3px;
     width: 15%;
     height: 15%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Sansita', sans-serif;
 }
 
@@ -58,9 +57,19 @@ body {
     background-color: #FFF;
 
 }
-#current-temp{
+
+#current-temp {
     font-size: 30px;
     justify-content: center;
+}
+
+#pointer {
+    justify-content: center;
+        transform: rotate(220deg);
+}
+
+#mph {
+    justify-content: flex-start;
 }
 
 .tile {
@@ -124,9 +133,10 @@ footer {
     color: steelblue
 }
 
-footer{
+footer {
     margin-bottom: 60px;
 }
+
 nav {
     position: fixed;
     width: 100%;
@@ -152,9 +162,11 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
-li{
+
+li {
     list-style: none;
 }
+
 #hourly ul {
     overflow: auto;
     overflow: scroll;
@@ -162,7 +174,8 @@ li{
     margin-top: 0px;
     padding-left: 10px;
 }
-#hourly ul li{
+
+#hourly ul li {
     display: inline-block;
     padding: 3px;
     text-decoration: none
