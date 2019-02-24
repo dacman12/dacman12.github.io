@@ -47,34 +47,51 @@ h6 {
 
 #logo{
     max-width: 100%;
+    font-display: "Weight: 32kb";
+    font-display: "Height: 99 pixles";
+    font-display: "Width: 100 pixles";
 }
 
 #rain{
     max-width: 100%;
+    font-display: "Weight: 24 kb";
+    font-display: "Height: 333 pixles";
+    font-display: "Width: 500 pixles";
 }
 
 #clear{
     max-width: 100%;
+    font-display: "Weight: 32kb";
+    font-display: "Height: 150 pixles";
+    font-display: "Width: 149 pixles";
 }
 
 #snow{
     max-width: 100%;
+    font-display: "Weight: 32kb";
+    font-display: "Height: 150 pixles";
+    font-display: "Width: 149 pixles";
 }
 
 #pointer{
     max-width: 100%;
+    font-display: "Weight: 32kb";
+    font-display: "Height: 150 pixles";
+    font-display: "Width: 149 pixles";
 }
 
 #fog{
     max-width: 100%;
+    font-display: "Weigth: 24kb";
+    font-display: "Height: 500 pixles";
+    font-display: "Width: 281 pixles";
 }
 
 #clouds{
     max-width: 100%;
-}
-
-#pointer{
-    max-width: 100%;
+    font-display: "24 kb";
+    font-display: "Height: 500 pixles";
+    font-display: "Width: 500 pixles";
 }
 
 /* Section 4 - Larger Screens */
@@ -85,23 +102,44 @@ h6 {
     }
     #logo2{
         max-width: 100%;
+        font-display: "Weight: 24kb";
+        font-display: "Height: 132 pixles";
+        font-display: "Width: 134 pixles";
     }
     #rain2{
         max-width: 100%;
+        font-display: "Weight: 167kb";
+        font-display: "Height: 1280 pixles";
+        font-display: "Width: 1920 pixles";
     }
     #clear2{
         max-width: 100%;
+        font-display: "Weight: 32kb";
+        font-display: "Height: 150 pixles";
+        font-display: "Width: 149 pixles";
     }
     #snow2{
         max-width: 100%;
+        font-display: "Weight: 24kb";
+        font-display: "Height: 3916 pixles";
+        font-display: "Width: 5872 pixles";
     }
     #pointer2{
         max-width: 100%;
+        font-display: "Weight: 2.98kb";
+        font-display: "Height: 166 pixles";
+        font-display: "Width: 167 pixles";
     }
     #fog2{
         max-width: 100%;
+        font-display: "Weight: 24kb";
+        font-display: "Height: 1836 pixles";
+        font-display: "Width: 3264 pixles";
     }
     #clouds2{
         max-width: 100%;
+        font-display: "Weight: 24kb";
+        font-display: "Height: 1280 pixles";
+        font-display: "Width: 1280 pixles";
     }
 }
