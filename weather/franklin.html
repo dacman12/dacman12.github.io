@@ -7,14 +7,13 @@
    <meta name="description" content="Weather and information about Franklin, ID.">
    <meta name="viewport" content="width=device-width">
    <!-- <meta name = "screen.css" content="/css/screen.css"> -->
-   <link href="/weather/css/screen.css" rel="stylesheet" type="text/css">
 </head>
- 
+
 <body>
    <header id="page-head">
-      <img id = "logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
+      <img id="logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
       <!-- <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo">  -->
-      <h2 id = "heading"><strong> The Weather Site </strong></h2>
+      <h2 id="heading"><strong> The Weather Site </strong></h2>
 
    </header>
    <nav id="page-nav">
@@ -22,24 +21,24 @@
          <li><a href="Content " title="content">Content</a></li>
          <li><a href="Search" title="Read Me">Read</a></li>
          <li><a href="franklinWebPage.html" title="Frankling">Franklin</a></li>
-         <li><a href="Greenville.html" title="Greenville">Greenville</a></li>
+         <li><a href="greenville.html" title="Greenville">Greenville</a></li>
       </ul>
    </nav>
 
    <section id="location-information">
       <h1>Franklin, ID</h1>
-       <ul>  
+      <ul>
          <li><strong>Zip: </strong>83237| </li>
-         <li><strong>Elevation: </strong> 1514.246 ft| </li>
+         <li id="feet"><strong>Elevation: </strong> 1514.246 ft| </li>
          <li><strong>Location</strong> 111.79 &deg; N, 42.07 &deg; W</li>
-      </ul> 
+      </ul>
    </section>
 
    <main id="page-main">
       <div id="current_weather">
          <section class="tile">
             <h2><strong>Temperature</strong></h2>
-            <p id = "current-temp"><strong>40&deg;F</strong></p>
+            <p id="current"><strong>40&deg;F</strong></p>
             <p>
                <span id="high">64&deg;F</span>
                <span id="low">41&deg;F</span>
@@ -51,19 +50,22 @@
 
          <section class="tile">
             <h2><strong>Wind</strong></h2>
-            <div id="dial" class="w">
-               <img id = "pointer" src="/weather/weather-site-images/images/wind-pointer.png" alt="Wind Pointer">
-            </div>
-            <ul class="speed">
-               <li id = "mph">  5 MPH</li>
-               <li id = "direction"><strong>Direction</strong> SW</li>
-               <li id = "gusts"><strong>Gusts</strong> 10 - 12 MPH</li>
-            </ul>
+            <section id = "abc">
+               <div id="dial" class="w" alt="Wind Pointer"></div>
+               <div id="mph"> 5 MPH</div>
+            </section>
+            <!-- <div id="dial" class="Sw"> -->
+            
+               <!-- </div> -->
+               <ul class="speed">
+                  <li id="direction"><strong>Direction</strong> SW</li>
+                  <li id="gusts"><strong>Gusts</strong> 10 - 12 MPH</li>
+               </ul>
          </section>
 
          <section class="tile">
             <h2><strong>Rain</strong></h2>
-            <img id="rainn" src="weather-site-images/images/rain.jpg" alt="Rain">
+            <div id="rainn" class="weth" alt="Rain"></div>
          </section>
       </div>
 
@@ -76,7 +78,7 @@
             <li>1 pm: 41 &deg;F |</li>
             <li>2 pm: 41 &deg;F |</li>
             <li>3 pm: 41 &deg;F |</li>
-            <li>4 pm: 42&deg;F |</li>
+            <li>4 pm: 42 &deg;F |</li>
             <li>5 pm: 44 &deg;F |</li>
             <li>6 pm: 44 &deg;F |</li>
             <li>7 pm: 46 &deg;F |</li>
@@ -84,14 +86,16 @@
             <li>9 pm: 51 &deg;F |</li>
             <li>10 pm: 55 &deg;F |</li>
          </ul>
-             
+
       </section>
    </main>
    <footer>
       &copy;2019 &mdash; The Weather Site
    </footer>
-   <link href="/weather/js/functions.js" rel="javascript" type="text/javascript">
+   <link href="/weather/css/screen.css" rel="stylesheet" type="text/css">
+   <script src="/weather/js/functions.js" rel="javascript" type="text/javascript"> </script>
 </body>
 
 <!-- >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a -->
+
 </html>
