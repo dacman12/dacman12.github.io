@@ -187,7 +187,7 @@ body {
 }
 
 #weather img {
-    image-rendering: "../weather-site-images/images/rain.jpg";
+    image: "../weather-site-images/images/rain.jpg";
     max-width: 100%;
 }
 
