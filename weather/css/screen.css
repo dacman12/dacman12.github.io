@@ -162,7 +162,7 @@ body {
 }
 
 #current_weather {
-    background-image: url(/weather/weather-site-images/images/rain.jpg);
+    background: url(/weather/weather-site-images/images/rain.jpg);
     background-size: 1000px;
     text-align: center;
 }
