@@ -69,28 +69,26 @@
  }
 
  // Wind Dial Function
- function rainn(weth) {
+ function rainn() {
     // Get the container
-    const rainn = document.getElementById("rainn");
-    console.log(weth);
-    // Determine the dial class
+    const rainn = getWeat("snow");
+    console.log(rainn);
+    document.getElementById("current_weather").setAttribute("class", rainn);
  }
+ rainn();
 
  //getWeat will determine the picture shown
  //the weather picture should change
- /*
+ 
    function getWeat(picture) {
-      picture = picture.toLowerCase();
-      console.log("snowwy" + picture);
-      let picture = "snow";
-   
+      picture = picture.toLowerCase();   
 
    //If-elsed statements make more sense to me.
-
+   //THis is not working. Need to debug
    if(picture == "snow" ||
     picture == "snowing" ||
     picture == "flurries"){
-       weat = snow;
+       weat = "snow";
        console.log("Condition is: " + weat);
        return weat;
     } else if(picture == "cloudy" ||
@@ -108,7 +106,7 @@
        weat = "rain";
        console.log("Condition is " + weat);
        return weat;
-    } else if(picture == "foggy" ||
+    } else if(picture == "fog" ||
     picture == "low visibility" ||
     picture == "smog" ||
     picture =="hazy" ||
@@ -121,8 +119,8 @@
        console.log("Condition is " + weat);
        return weat
     }
-
- */
+   }
+ 
 
  //Convert meters to feet
  buildFee(1514.246);
@@ -142,4 +140,10 @@
     feet.innerHTML = fe + " ft| ";
  }
 
- //  function weth
+//  function weatt(){
+//   let weatt =  getWeat("snow");
+//   document.getElementById("current_weather").setAttribute("class", weatt);
+//   console.log("puppy");
+//  }
+
+//  weatt();
