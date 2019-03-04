@@ -71,51 +71,57 @@
   // Wind Dial Function
   function rainn(weth) {
    // Get the container
-   const dial = document.getElementById("rainn");
+   const rainn = document.getElementById("rainn");
    console.log(weth);
    // Determine the dial class
-   switch (dir.toUpperCase()) {
-      case "North":
-      case "N":
-         dial.setAttribute("class", "n"); //"n" is the CSS rule selector
-         break;
-      case "NE":
-      case "NNE":
-      case "ENE":
-         dial.setAttribute("class", "ne");
-         break;
-      case "NW":
-      case "NNW":
-      case "WNW":
-         dial.setAttribute("class", "nw");
-         break;
-      case "South":
-      case "S":
-         dial.setAttribute("class", "s");
-         break;
-      case "SE":
-      case "SSE":
-      case "ESE":
-         dial.setAttribute("class", "se");
-         break;
-      case "SW":
-      case "SSW":
-      case "WSW":
-         dial.setAttribute("class", "sw");
-         break;
-      case "East":
-      case "E":
-         dial.setAttribute("class", "e");
-         break;
-      case "West":
-      case "W":
-         dial.setAttribute("class", "w");
-         console.log("gottem");
-         break;
+  }
+
+  //getWeather will determine the picture shown
+  //the weather picture should change
+  
+  function getWeat(picture) {
+     picture = picture.toLowerCase();
+     console.log("snowwy" + picture);
+     let picture = "";
+  }
+
+  //If-elsed statements make more sense to me.
+
+  if(picture == "snow" ||
+   picture == "snowing" ||
+   picture == "flurries"){
+      weat = snow;
+      console.log("Condition is: " + weat);
+      return weat;
+   } else if(picture == "cloudy" ||
+   picture == "overcast" ||
+   picture == "gloomy"){
+      weat = "clouds";
+      console.log("Condition is: " + weat)
+      return weat;
+   } else if(picture == "rain" ||
+   picture == "raining" ||
+   picture == "heavy raining" ||
+   picture == "rain" ||
+   picture == "wet" ||
+   picture == "mist"){
+      weat = "rain";
+      console.log("Condition is " + weat);
+      return weat;
+   } else if(picture == "foggy" ||
+   picture == "low visibility" ||
+   picture == "smog" ||
+   picture =="hazy" ||
+   picture == "haze"){
+      weat = "fog";
+      console.log("Condition is " + picture);
+      return weat;
+   } else{
+      weat = "clear";
+      console.log("Condition is " + weat);
+      return weat
    }
-}
-dial('w');
- dial('w');
+
 
 
  //Convert meters to feet

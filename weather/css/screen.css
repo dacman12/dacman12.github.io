@@ -286,7 +286,25 @@ li {
     text-decoration: none
 }
 
+.snow{
+    background-image: image("/weather/responsive_media/responsive_media/small/snow-min.jpg");
+}
 
+.overcast{
+    background-image: image("/weather/responsive_media/responsive_media/small/clouds.min.jpg");
+}
+
+.rain{
+    background-image: image("/weather/responsive_media/responsive_media/small/rain-min_167.jpg");
+}
+
+.foggy{
+    background-image: image("/weather/responsive_media/responsive_media/small/fog-min_53.jpg");
+}
+
+.clear{
+    background-image: image("/weather/responsive_media/responsive_media/small/clear-min-1_525.jpg");
+}
 
 /* Section 4 - Larger Screens */
 @media screen AND (min-width: 700px) {
@@ -306,5 +324,25 @@ li {
         flex-grow: 1;
     }
 
+    .snow{
+        background-image: image("/weather/responsive_media/responsive_media/small/snow-min.jpg");
+    }
+    
+    .overcast{
+        background-image: image("/weather/responsive_media/responsive_media/small/clouds.min.jpg");
+    }
+    
+    .rain{
+        background-image: image("/weather/responsive_media/responsive_media/small/rain-min_167.jpg");
+    }
+    
+    .foggy{
+        background-image: image("/weather/responsive_media/responsive_media/small/fog-min.jpg");
+    }
+    
+    .clear{
+        background-image: image("/weather/responsive_media/responsive_media/small/clear-min-1_525.jpg");
+    }
+    
     /* >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a */
 }
