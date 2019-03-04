@@ -62,7 +62,7 @@
           break;
        case "West":
        case "W":
-          dial.setAttribute("class", "w");
+          dial.setAttribute("class", "sw");
           console.log("gottem");
           break;
     }
@@ -76,7 +76,7 @@
     // Determine the dial class
  }
 
- //getWeather will determine the picture shown
+ //getWeat will determine the picture shown
  //the weather picture should change
  /*
    function getWeat(picture) {
