@@ -67,62 +67,62 @@
           break;
     }
  }
-
-  // Wind Dial Function
-  function rainn(weth) {
-   // Get the container
-   const rainn = document.getElementById("rainn");
-   console.log(weth);
-   // Determine the dial class
-  }
-
-  //getWeather will determine the picture shown
-  //the weather picture should change
-  
-  function getWeat(picture) {
-     picture = picture.toLowerCase();
-     console.log("snowwy" + picture);
-     let picture = "";
-  }
-
-  //If-elsed statements make more sense to me.
-
-  if(picture == "snow" ||
-   picture == "snowing" ||
-   picture == "flurries"){
-      weat = snow;
-      console.log("Condition is: " + weat);
-      return weat;
-   } else if(picture == "cloudy" ||
-   picture == "overcast" ||
-   picture == "gloomy"){
-      weat = "clouds";
-      console.log("Condition is: " + weat)
-      return weat;
-   } else if(picture == "rain" ||
-   picture == "raining" ||
-   picture == "heavy raining" ||
-   picture == "rain" ||
-   picture == "wet" ||
-   picture == "mist"){
-      weat = "rain";
-      console.log("Condition is " + weat);
-      return weat;
-   } else if(picture == "foggy" ||
-   picture == "low visibility" ||
-   picture == "smog" ||
-   picture =="hazy" ||
-   picture == "haze"){
-      weat = "fog";
-      console.log("Condition is " + picture);
-      return weat;
-   } else{
-      weat = "clear";
-      console.log("Condition is " + weat);
-      return weat
+ /*
+   // Wind Dial Function
+   function rainn(weth) {
+    // Get the container
+    const rainn = document.getElementById("rainn");
+    console.log(weth);
+    // Determine the dial class
    }
 
+   //getWeather will determine the picture shown
+   //the weather picture should change
+   
+   function getWeat(picture) {
+      picture = picture.toLowerCase();
+      console.log("snowwy" + picture);
+      let picture = "snow";
+   }
 
+   //If-elsed statements make more sense to me.
+
+   if(picture == "snow" ||
+    picture == "snowing" ||
+    picture == "flurries"){
+       weat = snow;
+       console.log("Condition is: " + weat);
+       return weat;
+    } else if(picture == "cloudy" ||
+    picture == "overcast" ||
+    picture == "gloomy"){
+       weat = "clouds";
+       console.log("Condition is: " + weat)
+       return weat;
+    } else if(picture == "rain" ||
+    picture == "raining" ||
+    picture == "heavy raining" ||
+    picture == "rain" ||
+    picture == "wet" ||
+    picture == "mist"){
+       weat = "rain";
+       console.log("Condition is " + weat);
+       return weat;
+    } else if(picture == "foggy" ||
+    picture == "low visibility" ||
+    picture == "smog" ||
+    picture =="hazy" ||
+    picture == "haze"){
+       weat = "fog";
+       console.log("Condition is " + picture);
+       return weat;
+    } else{
+       weat = "clear";
+       console.log("Condition is " + weat);
+       return weat
+    }
+
+ */
 
  //Convert meters to feet
  buildFee(1514.246);
@@ -142,4 +142,4 @@
     feet.innerHTML = fe + " ft| ";
  }
 
-//  function weth
+ //  function weth
