@@ -78,7 +78,7 @@
 
    //getWeather will determine the picture shown
    //the weather picture should change
-   
+   /*
    function getWeat(picture) {
       picture = picture.toLowerCase();
       console.log("snowwy" + picture);
@@ -122,7 +122,7 @@
        return weat
     }
 
- 
+ */
 
  //Convert meters to feet
  buildFee(1514.246);
