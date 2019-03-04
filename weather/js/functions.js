@@ -67,7 +67,7 @@
           break;
     }
  }
- /*
+ 
    // Wind Dial Function
    function rainn(weth) {
     // Get the container
@@ -122,7 +122,7 @@
        return weat
     }
 
- */
+ 
 
  //Convert meters to feet
  buildFee(1514.246);
