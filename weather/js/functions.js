@@ -71,7 +71,7 @@
  // Wind Dial Function
  function rainn() {
     // Get the container
-    const rainn = getWeat("snow");
+    const rainn = getWeat("clear");
     console.log(rainn);
     document.getElementById("current_weather").setAttribute("class", rainn);
  }

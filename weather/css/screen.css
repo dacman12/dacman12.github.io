@@ -161,12 +161,6 @@ body {
     border-radius: 15px;
 }
 
-#current_weather {
-    background-image: url("/weather/weather-site-images/images/rain.jpg");
-    background-size: 1000px;
-    text-align: center;
-}
-
 #high {
     color: red
 }
@@ -184,11 +178,6 @@ body {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
-}
-
-#weather img {
-    background-image: url("/weather/weather-site-images/images/rain.jpg");
-    max-width: 100%;
 }
 
 #hourly ul {
@@ -286,12 +275,17 @@ li {
     text-decoration: none
 }
 
+#current_weather {
+    background-size: 1000px;
+    text-align: center;
+}
+
 .snow{
-    background-image: url("/weather/responsive_media/responsive_media/small/snow-min.jpg");
+    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/snow-min.jpg");
 }
 
 .cloudy{
-    background-image: url("/weather/responsive_media/responsive_media/small/clouds.min.jpg");
+    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/clouds-min@2x1.jpg");
 }
 
 .rain{
@@ -302,8 +296,13 @@ li {
     background-image: url("/weather/responsive_media/responsive_media/small/fog-min_53.jpg");
 }
 
-.clear{
+.clear {
     background-image: url("/weather/responsive_media/responsive_media/small/clear-min-1_525.jpg");
+}
+
+#weather img {
+    background-image: url("/weather/weather-site-images/images/rain.jpg");
+    max-width: 100%;
 }
 
 /* Section 4 - Larger Screens */
