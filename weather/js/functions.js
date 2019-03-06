@@ -74,6 +74,18 @@
     const rainn = getWeat("clear");
     console.log(rainn);
     document.getElementById("current_weather").setAttribute("class", rainn);
+    document.getElementById("rainn").setAttribute("scr", );
+    if(rainn == "snow"){
+      document.getElementById("rainn").setAttribute("scr", "../images/snow-small.jpg" ) 
+    } else if( rainn == "clear"){
+      document.getElementById("rainn").setAttribute("scr", "../images/clear-small.jpg");
+    } else if(rainn == "rain"){
+      document.getElementById("rainn").setAttribute("scr", "../images/raindrops-small.jpg");
+    } else if( rainn == "cloudy"){
+      document.getElementById("rainn").setAttribute("scr", "../images/fog-small.jpg");
+    } else{
+      document.getElementById("rainn").setAttribute("scr", "../images/clear.small" );
+    }
  }
  rainn();
 

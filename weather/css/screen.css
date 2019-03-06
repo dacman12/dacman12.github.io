@@ -285,23 +285,23 @@ li {
 }
 
 .snow {
-    background-image: url("/weather/weather-images/weather-images/snow.jpg");
+    background-image: url("/weather/images/snow-small.jpg");
 }
 
 .cloudy {
-    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/clouds-min@2x1.jpg");
+    background-image: url("/weather/images/clouds-small.jpg");
 }
 
 .rain {
-    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/rain-min_167.jpg");
+    background-image: url("/weather/images/raindrops-small.jpg");
 }
 
 .fog {
-    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/fog-min_53.jpg");
+    background-image: url("/weather/images/fog-small.jpg");
 }
 
 .clear {
-    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/clear-min-1_525.jpg");
+    background-image: url("/weather/images/clear-small.jpg");
 }
 
 
@@ -325,23 +325,23 @@ li {
     }
 
     .snow{
-        background-image: url("/weather/responsive_media/responsive_media/small/snow-min.jpg");
+        background-image: url("/weather/images/snow-large.jpg");
     }
     
     .cloudy{
-        background-image: url("/weather/responsive_media/responsive_media/small/clouds.min.jpg");
+        background-image: url("/weather/images/clouds-large.jpg");
     }
     
     .rain{
-        background-image: url("/weather/responsive_media/responsive_media/small/rain-min_167.jpg");
+        background-image: url("/weather/images/raindrops-large.jpg");
     }
     
     .fog{
-        background-image: url("/weather/responsive_media/responsive_media/small/fog-min.jpg");
+        background-image: url("/weather/images/fog-large.jpg");
     }
     
     .clear{
-        background-image: url("/weather/responsive_media/responsive_media/small/clear-min-1_525.jpg");
+        background-image: url("/weather/images/clear-large.jpg");
     }
     
     /* >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a */
