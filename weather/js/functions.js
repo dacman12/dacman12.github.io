@@ -74,65 +74,70 @@
     const rainn = getWeat("clear");
     console.log(rainn);
     document.getElementById("current_weather").setAttribute("class", rainn);
-    document.getElementById("rainn").setAttribute("scr", );
-    if(rainn == "snow"){
-      document.getElementById("rainn").setAttribute("scr", "../images/snow-small.jpg" ) 
-    } else if( rainn == "clear"){
-      document.getElementById("rainn").setAttribute("scr", "../images/clear-small.jpg");
-    } else if(rainn == "rain"){
-      document.getElementById("rainn").setAttribute("scr", "../images/raindrops-small.jpg");
-    } else if( rainn == "cloudy"){
-      document.getElementById("rainn").setAttribute("scr", "../images/fog-small.jpg");
-    } else{
-      document.getElementById("rainn").setAttribute("scr", "../images/clear.small" );
+
+    if (rainn == "snow") {
+       console.log("snpw");
+       document.getElementById("rainn").setAttribute("src", "/weather/images/snow-small.jpg")
+    } else if (rainn == "clear") {
+       console.log("clear");
+       document.getElementById("rainn").setAttribute("src", "/weather/images/clear-small.jpg");
+    } else if (rainn == "rain") {
+       console.log("rain");
+       document.getElementById("rainn").setAttribute("src", "/weather/images/raindrops-small.jpg");
+    } else if (rainn == "cloudy") {
+       console.log("cloud");
+       document.getElementById("rainn").setAttribute("src", "/weather/images/clouds-small.jpg");
+    } else {
+       console.log("fog");
+       document.getElementById("rainn").setAttribute("src", "/weather/images/fog-small.jpg");
     }
  }
  rainn();
 
  //getWeat will determine the picture shown
  //the weather picture should change
- 
-   function getWeat(picture) {
-      picture = picture.toLowerCase();   
 
-   //If-elsed statements make more sense to me.
-   //THis is not working. Need to debug
-   if(picture == "snow" ||
-    picture == "snowing" ||
-    picture == "flurries"){
+ function getWeat(picture) {
+    picture = picture.toLowerCase();
+
+    //If-elsed statements make more sense to me.
+    //THis is not working. Need to debug
+    if (picture == "snow" ||
+       picture == "snowing" ||
+       picture == "flurries") {
        weat = "snow";
        console.log("Condition is: " + weat);
        return weat;
-    } else if(picture == "cloudy" ||
-    picture == "overcast" ||
-    picture == "gloomy"){
+    } else if (picture == "cloudy" ||
+       picture == "overcast" ||
+       picture == "gloomy") {
        weat = "clouds";
        console.log("Condition is: " + weat)
        return weat;
-    } else if(picture == "rain" ||
-    picture == "raining" ||
-    picture == "heavy raining" ||
-    picture == "rain" ||
-    picture == "wet" ||
-    picture == "mist"){
+    } else if (picture == "rain" ||
+       picture == "raining" ||
+       picture == "heavy raining" ||
+       picture == "rain" ||
+       picture == "wet" ||
+       picture == "mist") {
        weat = "rain";
        console.log("Condition is " + weat);
        return weat;
-    } else if(picture == "fog" ||
-    picture == "low visibility" ||
-    picture == "smog" ||
-    picture =="hazy" ||
-    picture == "haze"){
+    } else if (picture == "fog" ||
+       picture == "low visibility" ||
+       picture == "smog" ||
+       picture == "hazy" ||
+       picture == "haze") {
        weat = "fog";
        console.log("Condition is " + picture);
        return weat;
-    } else{
+    } else {
        weat = "clear";
        console.log("Condition is " + weat);
        return weat
     }
-   }
- 
+ }
+
 
  //Convert meters to feet
  buildFee(1514.246);
@@ -152,10 +157,10 @@
     feet.innerHTML = fe + " ft| ";
  }
 
-//  function weatt(){
-//   let weatt =  getWeat("snow");
-//   document.getElementById("current_weather").setAttribute("class", weatt);
-//   console.log("puppy");
-//  }
+ //  function weatt(){
+ //   let weatt =  getWeat("snow");
+ //   document.getElementById("current_weather").setAttribute("class", weatt);
+ //   console.log("puppy");
+ //  }
 
-//  weatt();
+ //  weatt();
