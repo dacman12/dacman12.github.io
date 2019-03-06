@@ -105,7 +105,7 @@ body {
     width: 150px;
     background: no-repeat center/85% url('/weather/weather-site-images/images/wind-pointer.png');
     z-index: 100;
-    margin: -.6em auto 0;
+    margin: .6em auto 0;
 }
 
 .n {
@@ -198,6 +198,10 @@ footer {
     background-color: #0e89d5;
 }
 
+#weather img {
+    background-image: url("blah");
+    max-width: 100%;
+}
 
 /* Section 3 -Mobile First Rules */
 
@@ -280,30 +284,27 @@ li {
     text-align: center;
 }
 
-.snow{
-    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/snow-min.jpg");
+.snow {
+    background-image: url("/weather/weather-images/weather-images/snow.jpg");
 }
 
-.cloudy{
+.cloudy {
     background-image: url("/weather/responsive_media/responsive_media/images/weather/small/clouds-min@2x1.jpg");
 }
 
-.rain{
-    background-image: url("/weather/responsive_media/responsive_media/small/rain-min_167.jpg");
+.rain {
+    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/rain-min_167.jpg");
 }
 
-.fog{
-    background-image: url("/weather/responsive_media/responsive_media/small/fog-min_53.jpg");
+.fog {
+    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/fog-min_53.jpg");
 }
 
 .clear {
-    background-image: url("/weather/responsive_media/responsive_media/small/clear-min-1_525.jpg");
+    background-image: url("/weather/responsive_media/responsive_media/images/weather/small/clear-min-1_525.jpg");
 }
 
-#weather img {
-    background-image: url("/weather/weather-site-images/images/rain.jpg");
-    max-width: 100%;
-}
+
 
 /* Section 4 - Larger Screens */
 @media screen AND (min-width: 700px) {
