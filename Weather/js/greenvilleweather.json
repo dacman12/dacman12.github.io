@@ -1,0 +1,17 @@
+ "Greenville": {
+  "City": "Greenville",
+  "State": "SC",
+  "High": 72,
+  "Low": 51,
+  "Temp": 55,
+  "Precip": 45,
+  "Wind": "8",
+  "Direction": "SW",
+  "Gusts": "15-17",
+  "Summary": "Thunderstorms",
+  "Longitude": -82.4,
+  "Latitude": 34.85,
+  "Elevation": 294.437,
+  "Zip": 29601,
+  "Hourly": [55, 55, 56, 57, 57, 57, 59, 59, 59, 60, 61, 63, 64]
+ }

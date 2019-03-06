@@ -312,6 +312,8 @@ li {
 @media screen AND (min-width: 700px) {
     #current_weather {
         flex-direction: row;
+        display: flex;
+        background-size: 1700px;
     }
 
     nav {
