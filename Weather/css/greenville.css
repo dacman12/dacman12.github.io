@@ -16,7 +16,9 @@
     display: flex;
 }
 
-
+.hide{
+    display: none;
+}
 
 #heading {
     font-size: 30px;
