@@ -72,23 +72,22 @@ function rainn(summary) {
    // Get the container
    const rainn = getWeat(summary);
    console.log("summary = " + rainn);
-   document.getElementById("current_weather").setAttribute("class", rainn);
 
    if (rainn == "snow") {
       console.log("snpw");
-      document.getElementById("rainn").setAttribute("src", "/weather/images/snow-small.jpg")
+      document.getElementById("rainn").setAttribute("src", "images/snow-small.jpg")
    } else if (rainn == "clear") {
       console.log("clear");
-      document.getElementById("rainn").setAttribute("src", "/weather/images/clear-small.jpg");
+      document.getElementById("rainn").setAttribute("src", "images/clear-small.jpg");
    } else if (rainn == "rain") {
       console.log("rain");
-      document.getElementById("rainn").setAttribute("src", "/weather/images/raindrops-small.jpg");
+      document.getElementById("rainn").setAttribute("src", "images/raindrops-small.jpg");
    } else if (rainn == "cloudy") {
       console.log("cloud");
-      document.getElementById("rainn").setAttribute("src", "/weather/images/clouds-small.jpg");
+      document.getElementById("rainn").setAttribute("src", "images/clouds-small.jpg");
    } else {
       console.log("fog");
-      document.getElementById("rainn").setAttribute("src", "/weather/images/fog-small.jpg");
+      document.getElementById("rainn").setAttribute("src", "images/fog-small.jpg");
    }
 }
 
