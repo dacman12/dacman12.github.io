@@ -183,15 +183,13 @@ body {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
-}
-
-#hourly ul {
     overflow: auto;
     overflow: scroll;
     white-space: nowrap;
     margin-top: 0px;
     padding-left: 10px;
 }
+
 
 #hourly ul li {
     display: inline-block;
