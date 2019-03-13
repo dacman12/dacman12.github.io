@@ -107,7 +107,7 @@ function fetchData(weatherURL) {
          // Set the temperature information
          document.getElementById("temperature").innerHTML = temperature + "&deg;F";
          document.getElementById("high").innerHTML = high + "&deg;F";
-         console.log("high = " + high);
+         console.log("high = " + high); 
          document.getElementById("low").innerHTML = low + "&deg;F";
          console.log("Speed= " + speed + " , temperature= " + temperature);
          buildWC(speed, temperature);

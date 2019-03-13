@@ -68,7 +68,7 @@ function dial(dir) {
 }
 
 // Wind Dial Function
-function rainn(summary) {
+function rainn(summary) { 
    // Get the container
    const rainn = getWeat(summary);
    console.log("summary = " + rainn);
