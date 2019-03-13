@@ -123,7 +123,7 @@ function fetchData(weatherURL) {
          console.log(hourly);
 
          // Set the hourly temperature information
-         document.getElementById("hourly1").innerHTML = hourly;
+         document.getElementById("hourly").innerHTML = hourly;
 
          // Change the status of the containers
          contentContainer.setAttribute('class', ''); // removes the hide class
