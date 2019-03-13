@@ -75,7 +75,7 @@
     console.log(rainn);
     document.getElementById("current_weather").setAttribute("class", rainn);
 
-    if (rainn == "snow") {
+    if (rainn == "snow") { 
        console.log("snpw");
        document.getElementById("rainn").setAttribute("src", "/weather/images/snow-small.jpg")
     } else if (rainn == "clear") {
