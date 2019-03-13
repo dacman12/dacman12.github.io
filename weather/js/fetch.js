@@ -119,7 +119,7 @@ function fetchData(weatherURL) {
          // Set the current conditions information
          rainn(summary);
          console.log("rainn");
-
+         document.getElementbyId("yes").innerHTML = "<strong>" + summary + "</strong>";
          console.log(hourly);
 
          // Set the hourly temperature information

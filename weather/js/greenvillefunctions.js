@@ -81,7 +81,7 @@ function rainn(summary) {
       document.getElementById("rainn").setAttribute("src", "images/clear-small.jpg");
    } else if (rainn == "rain") {
       console.log("rain");
-      document.getElementById("rainn").setAttribute("src", "images/raindrops-small.jpg");
+      document.getElementById("rainn").setAttribute("src", "images/raindrops-small-Dakota-Laptop.jpg");
    } else if (rainn == "cloudy") {
       console.log("cloud");
       document.getElementById("rainn").setAttribute("src", "images/clouds-small.jpg");
