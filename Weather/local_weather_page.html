@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+   <meta charset="UTF-8">
+   <title id="locName"> | Weather Site </title>
+   <meta name="description" content="Weather and information about locName">
+   <meta name="viewport" content="width=device-width">
+   <!-- <meta name = "screen.css" content="/css/screen.css"> -->
+</head>
+
+<body>
+   <header id="page-head">
+      <img id="logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
+      <!-- <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo">  -->
+      <h2> THe Weather Site</h2>
+
+   </header>
+   <nav id="page-nav">
+      <ul>
+         <li><a href="Content " title="content">Content</a></li>
+         <li><a href="Search" title="Read Me">Read</a></li>
+         <li><a href="franklin.html" title="Frankling">Franklin</a></li>
+         <li><a href="greenville.html" title="Greenville">Greenville</a></li>
+      </ul>
+   </nav>
+
+   <section id="location-information">
+      <h1 id="fullName"></h1>
+      <ul>
+         <li id="code"></li>
+         <li id="height"></li>
+         <li id="place"></li>
+      </ul>
+   </section>
+   <section id='statusContainer'> Please be patient as I get your weather information</section>
+   <main id="main-content">
+      <div id="current_weather" class='rain'>
+         <section class="tile">
+            <h2><strong>Temperature</strong></h2>
+            <p id="temperature"><strong>55&deg;F</strong></p>
+            <p>
+               <span id="high"></span>
+               <span id="low"></span>
+            </p>
+            <p>
+               <span id="feels"></span>
+            </p>
+         </section>
+
+         <section class="tile">
+            <h2><strong>Wind</strong></h2>
+            <section id="abc">
+               <div id="dial" class="sw"></div>
+               <div id="mph"></div>
+            </section>
+            <!-- <div id="dial" class="Sw"> -->
+
+            <!-- </div> -->
+            <ul class="speed"> 
+               <li id="direction"></li>
+               <li id="speed"></li>
+               <li id = "gusts"></li>
+            </ul>
+         </section>
+
+         <section class="tile">
+            <h2 id = "yes"><strong>Rain</strong></h2>
+            <img id="cur_weather" class="rainny" src="#" alt="photo of current weather">
+         </section>
+      </div>
+
+      <section id = "hourly">
+         <h2><strong>Hourly Forcast</strong></h2>
+         <ul >
+
+         </ul>
+
+      </section>
+   </main>
+   <footer>
+      &copy;2019 &mdash; The Weather Site
+   </footer>
+   <link href="/weather/css/local_weather.css rel="stylesheet" type="text/css">
+   <script src="/weather/js/local_weather_fetch.js" rel="javascript" type="text/javascript"> </script>
+   <script src="/weather/js/local_weather_functions.js" rel="javascript" type="text/javascript"></script>
+
+</body>
+
+<!-- >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a -->
+
+</html>
