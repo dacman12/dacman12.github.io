@@ -119,8 +119,12 @@ function getWeather(stationId) {
       console.log(data);
     
       // Store weather information to localStorage 
+       let elevation = data.properties.elevation.value;
+       console.log("I am " + elevation + " feet tall");
    
-   
+       let cur_temp = data.properties.periods.temperature;
+       console.log("It is currently " + cur_temp );
+
       // Build the page for viewing 
       
      }) 
