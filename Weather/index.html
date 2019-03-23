@@ -3,13 +3,14 @@
 
 <head>
    <meta charset="UTF-8">
-   <title id="locName"> | Weather Site </title>
+   <title id="city"> | Weather Site </title>
    <meta name="description" content="Weather and information about Greenville, SC.">
    <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="/weather/localweather/css/greenville.css">
+   <!-- <link rel="stylesheet" href="/weather/localweather/css/localweather"> -->
    <!-- <meta name = "screen.css" content="/css/screen.css"> -->
 </head>
- <!-- I (Dakota Griggs) have worked with Ryan Cross, and Harmony Durfee -->
+<!-- I (Dakota Griggs) have worked with Ryan Cross, and Harmony Durfee -->
+
 <body>
    <header id="page-head">
       <img id="logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
@@ -29,14 +30,14 @@
    <section id="location-information">
       <h1 id="fullName"></h1>
       <ul>
-         <li id="code"></li>
+         <li> <strong>Zip: </strong> none| </li>
          <li id="elevation"></li>
          <li id="place"></li>
       </ul>
    </section>
    <section id='status'> Please be patient as I get your weather information</section>
    <main id="main-content" class="hide">
-      <div id="current_weather" class='rain'>
+      <div id="current_weather" class='clear'>
          <section class="tile">
             <h2><strong>Temperature</strong></h2>
             <p id="temperature"><strong>55&deg;F</strong></p>
@@ -52,22 +53,21 @@
          <section class="tile">
             <h2><strong>Wind</strong></h2>
             <section id="abc">
-               <div id="dial" class="sw"></div>
+               <div id="dialBlah" class="sw">&nbsp;</div>
                <div id="mph"></div>
             </section>
-            <!-- <div id="dial" class="Sw"> -->
+            <!-- <div id="dialBlah" class="Sw"> -->
 
             <!-- </div> -->
             <ul class="speed">
                <li id="direction"></li>
-               <li id="speed"></li>
                <li id="gusts"></li>
             </ul>
          </section>
 
          <section class="tile">
             <h2 id="yes"><strong>Rain</strong></h2>
-            <img id="rainn" class="weat" src="#" alt="photo of current weather">
+            <img id="current" class="clear" src="#" alt="photo of current weather">
          </section>
       </div>
 
@@ -82,7 +82,7 @@
    <footer>
       &copy;2019 &mdash; The Weather Site
    </footer>
-   <link href="/weather/css/greenville.css" rel="stylesheet" type="text/css">
+   <link href="/weather/localweather/css/local_weather.css" rel="stylesheet" type="text/css">
    <script src="/weather/localweather/js/functions.js" rel="javascript" type="text/javascript"></script>
    <script src="/weather/localweather/geo_loc.js" rel="javascript" type="text/javascript"> </script>
 
