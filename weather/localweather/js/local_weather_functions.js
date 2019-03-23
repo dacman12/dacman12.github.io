@@ -15,8 +15,8 @@ console.log("Header and storage are here");
 var storage = window.localStorage;
 console.log("Header and storge have passed");
 
-let speed = storage.getItem("Wind");
-let speed = speed.charAt(0);
+// let speed = storage.getItem("Wind");
+// let speed = speed.charAt(0);
 
 
 // Wind dialBlah Function
@@ -360,7 +360,7 @@ function getHourly(URL) {
          console.log("It is currently " + currentTemp);
          storage.setItem("Current", currentTemp);
 
-
+         buildPage();s
       })
       .catch(error => console.log('There was a getHourly error: ', error))
 }
@@ -372,9 +372,6 @@ function buildPage() {
    let speed = storage.getItem("Wind");
 
    let ws = speed.charAt(0);
-
-   let hours = storage.getItem("hourly");
-   let hourlyData = hours.split(", ");
 
    // convert celcius to Farenheight
    function convert(temp) {
@@ -401,8 +398,6 @@ function buildPage() {
    let current_weather1 = storage.getItem("currentWeather");
    document.getElementById("current_weather").innerHTML = current_weather1;
 
-   let detailedinfo = storage.getItem("detailed");
-
    let direction = storage.getItem("direction");
    dial(direction);
 
@@ -410,9 +405,13 @@ function buildPage() {
    let current = storage.getItem("Current");
    document.getElementById("temperature").innerHTML = current;
 
+   let hours = storage.getItem("hourly");
+   let hourlyData = hours.split(", ");
+   document.getElementById("hourlyData").innerHTML = hours;
+
    // Task 4 - Hide status and show main
    document.getElementById('page-head').setAttribute('class', '');
    status.setAttribute('class', 'hide');
 }
 
-buildPage();
+
