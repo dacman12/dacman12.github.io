@@ -16,7 +16,7 @@ var storage = window.localStorage;
 console.log("Header and storge have passed");
 
 let speed = storage.getItem("Wind");
-let WS = speed.charAt(0);
+let speed = speed.charAt(0);
 
 
 // Wind dialBlah Function
