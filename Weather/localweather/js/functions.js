@@ -67,9 +67,9 @@ function dial(direction) {
          break;
       case "West":
       case "W":
-         dialBlah.setAttribute("class", "sw");
+         dialBlah.setAttribute("class", "w");
          console.log("gottem");
-         break;
+
    }
 }
 
