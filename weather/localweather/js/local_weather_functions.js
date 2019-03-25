@@ -443,7 +443,7 @@ function buildPage() {
    // Task 3 - Populate weather information
 
    // let gusts1 = storage.getItem("WindGust");
-   // document.getElementById("gusts").innerHTML = gusts1;
+   document.getElementById("gusts").innerHTML = storage.getItem("WindGust");
 
    // let current_weather1 = storage.getItem("currentWeather");
    // document.getElementById("current_weather").innerHTML = current_weather1;
@@ -452,18 +452,19 @@ function buildPage() {
    //dial(direction);
 
    //get current temperature
-   //document.getElementById("temperature").innerHTML = current;
+   document.getElementById("temperature").innerHTML = storage.getItem("Current") + "&deg;F";
+ 
 
    // let hi = storage.getItem("hiTemp");
-   // document.getElementById("high").innerHTML = hi;
+   document.getElementById("high").innerHTML = storage.getItem("high") + "&deg;F";
    // console.log("The hi is " + hi);
 
    // let low = storage.getItem("lowTemp");
-   // document.getElementById("low").innerHTML = low;
+    document.getElementById("low").innerHTML = storage.getItem("low") + "&deg;F";
    // console.log("The low is " + low);
 
    let feels = storage.getItem("feels");
-   document.getElementById("feels".innerHTML = feels);
+   document.getElementById("feels").innerHTML = storage.getItem("feels") + "&deg;F";
    console.log("It feels like " + feels);
 
     let hours = storage.getItem("hourly");
