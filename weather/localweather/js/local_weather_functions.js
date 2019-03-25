@@ -442,11 +442,7 @@ function buildPage() {
 
    // Task 3 - Populate weather information
 
-   // let gusts1 = storage.getItem("WindGust");
    document.getElementById("gusts").innerHTML = storage.getItem("WindGust");
-
-   // let current_weather1 = storage.getItem("currentWeather");
-   // document.getElementById("current_weather").innerHTML = current_weather1;
 
    //let direction = storage.getItem("direction");
    //dial(direction);
