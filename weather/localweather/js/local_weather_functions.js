@@ -15,73 +15,74 @@ console.log("Header and storage are here");
 var storage = window.localStorage;
 console.log("Header and storge have passed");
 
-// let speed = storage.getItem("Wind");
-// let speed = speed.charAt(0);
 
-
+console.log("dose it work here?");
 // Wind dialBlah Function
-function dial(direction) {
-   // Get the container
-   const dialBlah = document.getElementById("dialBlah");
-   console.log(direction);
-   // Determine the dialBlah class
-   switch (direction.toUpperCase()) {
-      case "North":
-      case "N":
-         dialBlah.setAttribute("class", "n"); //"n" is the CSS rule selector
-         console.log("Guess");
-         break;
-      case "NE":
-      case "NNE":
-      case "ENE":
-         dialBlah.setAttribute("class", "ne");
-         console.log("Who's");
-         break;
-      case "NW":
-      case "NNW":
-      case "WNW":
-         dialBlah.setAttribute("class", "nw");
-         console.log("back, ");
-         break;
-      case "South":
-      case "S":
-         dialBlah.setAttribute("class", "s");
-         console.log("back");
-         break;
-      case "SE":
-      case "SSE":
-      case "ESE":
-         dialBlah.setAttribute("class", "se");
-         console.log("again, ");
-         break;
-      case "SW":
-      case "SSW":
-      case "WSW":
-         dialBlah.setAttribute("class", "sw");
-         console.log("Shady's");
-         break;
-      case "East":
-      case "E":
-         dialBlah.setAttribute("class", "e");
-         console.log("back");
-         break;
-      case "West":
-      case "W":
-         dialBlah.setAttribute("class", "w");
-         console.log("gottem");
+// function dial(direction) {
+//    // Get the container
+//    const dialBlah = document.getElementById("dialBlah");
+//    console.log(direction);
+//    // Determine the dialBlah class
+//    switch (direction.toUpperCase()) {
+//       case "North":
+//       case "N":
+//          dialBlah.setAttribute("class", "n"); //"n" is the CSS rule selector
+//          console.log("Guess");
+//          break;
+//       case "NE":
+//       case "NNE":
+//       case "ENE":
+//          dialBlah.setAttribute("class", "ne");
+//          console.log("Who's");
+//          break;
+//       case "NW":
+//       case "NNW":
+//       case "WNW":
+//          dialBlah.setAttribute("class", "nw");
+//          console.log("back, ");
+//          break;
+//       case "South":
+//       case "S":
+//          dialBlah.setAttribute("class", "s");
+//          console.log("back");
+//          break;
+//       case "SE":
+//       case "SSE":
+//       case "ESE":
+//          dialBlah.setAttribute("class", "se");
+//          console.log("again, ");
+//          break;
+//       case "SW":
+//       case "SSW":
+//       case "WSW":
+//          dialBlah.setAttribute("class", "sw");
+//          console.log("Shady's");
+//          break;
+//       case "East":
+//       case "E":
+//          dialBlah.setAttribute("class", "e");
+//          console.log("back");
+//          break;
+//       case "West":
+//       case "W":
+//          dialBlah.setAttribute("class", "w");
+//          console.log("gottem");
 
-   }
-}
+//    }
+// }
 
 
 // Calculate the Windchill
 
 function buildWC(speed, temp) {
+   // let speed = storage.getItem("Wind");
+   // let speed = speed.charAt(0);
    console.log("speed = " + speed + "temp = " + temp);
    const feelsLike = document.getElementById('feels');
 
    // Compute the windchill
    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+   storage.setItem("feels", wc);
    console.log("It feels like " + wc);
 
    // Round the answer down to integer
@@ -280,8 +281,12 @@ function getWeather(stationId) {
          console.log("It is currently " + temp + " outside");
 
          let miles = data.properties.windSpeed.value;
+         console.log("I am going " + miles + " k/h")
          let mph = miles * 2.237;
+         // let mph = Math.round(mph*100)/100;
+         //document.getElementById("mph").innerHTML = speed + " mph";
          console.log("I am going " + mph);
+
 
          let currentWeather = data.properties.textDescription;
          console.log("It is currently " + currentWeather);
@@ -318,15 +323,54 @@ function getForecast(URL) {
          let hiTemp = data.properties.periods[0].temperature;
          storage.setItem("high", hiTemp);
          console.log("The hi is " + hiTemp);
+
          let lowTemp = data.properties.periods[1].temperature;
          storage.setItem("low", lowTemp);
          console.log("the low is " + lowTemp);
+
          let detailedForecast = data.properties.periods[0].detailedForecast;
          storage.setItem("detailed", detailedForecast);
          console.log(detailedForecast);
       })
       .catch(error => console.log('There was a getForecast error: ', error))
 }
+
+// Convert, Format time to 12 hour format
+
+// function format_time(hour) {
+
+//    if (hour > 23) {
+
+//       hour -= 24;
+
+//    }
+
+//    let amPM = (hour > 11) ? "pm" : "am";
+
+//    if (hour > 12) {
+
+//       hour -= 12;
+
+//    }
+
+//    if (hour == 0) {
+
+//       hour = "12";
+
+//    }
+
+//    return hour + amPM;
+
+// }
+
+// function buildHourlyData(nextHour, hourly) {
+//    let hourlyListItems = '<li>' + format_time + ": " + hourly[0] + '&deg;F</li>';
+//    for (let i = 1; x = hourly.length; i++) {
+//       hourlyListItems += '<li>' + format_time(nextHour + 1) + ': ' + hourly[i] + '&deg;F';
+//    }
+//    return hourlyListItems
+// }
+
 
 
 function getHourly(URL) {
@@ -360,18 +404,23 @@ function getHourly(URL) {
          console.log("It is currently " + currentTemp);
          storage.setItem("Current", currentTemp);
 
-         buildPage();s
+         buildPage();
       })
       .catch(error => console.log('There was a getHourly error: ', error))
 }
 
 // Populate the current location weather page
 function buildPage() {
+
+
    // Task 1 - Feed data to WC, dialBlah, Image, Meters to feet and hourly temps functions
-
    let speed = storage.getItem("Wind");
+   // let speed = speed.charAt(0);
+   console.log("Sonic the hedgehog is going " + speed);
 
-   let ws = speed.charAt(0);
+
+   // let current = storage.getItem("Current");
+   // buildWC(storage.getItem("Wind"), storage.getItem("Current"));
 
    // convert celcius to Farenheight
    function convert(temp) {
@@ -386,32 +435,47 @@ function buildPage() {
    console.log("aaaaaaaaaaaaaaaaaaaaa " + long);
    let spot = "<strong> Location: </strong>" + lat + "&deg; N" + long + "&deg; W";
    document.getElementById("place").innerHTML = spot;
+   console.log("The spot I am at is :" + spot);
 
    let citSt = storage.getItem("locName") + ", " + storage.getItem("locState");
    document.getElementById("fullName").innerHTML = citSt;
 
    // Task 3 - Populate weather information
 
-   let gusts1 = storage.getItem("WindGust");
-   document.getElementById("gusts").innerHTML = gusts1;
+   // let gusts1 = storage.getItem("WindGust");
+   // document.getElementById("gusts").innerHTML = gusts1;
 
-   let current_weather1 = storage.getItem("currentWeather");
-   document.getElementById("current_weather").innerHTML = current_weather1;
+   // let current_weather1 = storage.getItem("currentWeather");
+   // document.getElementById("current_weather").innerHTML = current_weather1;
 
-   let direction = storage.getItem("direction");
-   dial(direction);
+   //let direction = storage.getItem("direction");
+   //dial(direction);
 
    //get current temperature
-   let current = storage.getItem("Current");
-   document.getElementById("temperature").innerHTML = current;
+   //document.getElementById("temperature").innerHTML = current;
 
-   let hours = storage.getItem("hourly");
-   let hourlyData = hours.split(", ");
-   document.getElementById("hourlyData").innerHTML = hours;
+   // let hi = storage.getItem("hiTemp");
+   // document.getElementById("high").innerHTML = hi;
+   // console.log("The hi is " + hi);
+
+   // let low = storage.getItem("lowTemp");
+   // document.getElementById("low").innerHTML = low;
+   // console.log("The low is " + low);
+
+   let feels = storage.getItem("feels");
+   document.getElementById("feels".innerHTML = feels);
+   console.log("It feels like " + feels);
+
+    let hours = storage.getItem("hourly");
+   // let hourlyData = hours.split(", ");
+   // let date = new Date();
+   // let nextHour = date.getHours() + 1;
+    document.getElementById("hourlyData").innerHTML = hours.split(",");
+   // document.getElementById("hourlyData").innerHTML = buildHourlyData(nextHour, storage.getItem("hourly").split(","));
+   console.log("the hours are: " + hourlyData);
 
    // Task 4 - Hide status and show main
-   document.getElementById('page-head').setAttribute('class', '');
-   status.setAttribute('class', 'hide');
+   console.log("HIDING CONTENT");
+   document.getElementById('main-content').setAttribute('class', '');
+   //status.setAttribute('class', 'hide');
 }
-
-

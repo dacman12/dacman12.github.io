@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
- 
+
 <head>
    <meta charset="UTF-8">
    <title id="city"> | Weather Site </title>
@@ -8,6 +8,7 @@
    <meta name="viewport" content="width=device-width">
    <!-- <link rel="stylesheet" href="/weather/localweather/css/localweather"> -->
    <!-- <meta name = "screen.css" content="/css/screen.css"> -->
+   <link href="/weather/localweather/css/local_weather.css" rel="stylesheet" type="text/css">
 </head>
 <!-- I (Dakota Griggs) have worked with Ryan Cross, and Harmony Durfee -->
 
@@ -15,8 +16,7 @@
    <header id="page-head">
       <img id="logo" src="/weather/plan-images/plan-images/logo.jpeg" alt=logo>
       <!-- <img src="/weather/plan-images/plan-images/logo.jpeg" alt="logo">  -->
-      
-   <link href="/weather/localweather/css/local_weather.css" rel="stylesheet" type="text/css">
+
       <h2> THe Weather Site</h2>
 
    </header>
@@ -34,8 +34,8 @@
       <h1 id="fullName"></h1>
       <ul>
          <li> <strong>Zip: </strong> none| </li>
-         <li id="elevation"></li>
-         <li id="place"></li>
+         <li id="elevation">over 9000</li>
+         <li id="place"> hoopla</li>
       </ul>
    </section>
    <section id='status'> Please be patient as I get your weather information</section>
@@ -43,13 +43,13 @@
       <div id="current_weather" class='clear'>
          <section class="tile">
             <h2><strong>Temperature</strong></h2>
-            <p id="temperature"><strong>55&deg;F</strong></p>
+            <p id="temperature"><strong>35&deg;F</strong></p>
             <p>
-               <span id="high"></span>
-               <span id="low"></span>
+               <span id="high">54</span>
+               <span id="low">28</span>
             </p>
             <p>
-               <span id="feels"></span>
+               <span id="feels">28</span>
             </p>
          </section>
 
@@ -57,14 +57,14 @@
             <h2><strong>Wind</strong></h2>
             <section id="abc">
                <div id="dialBlah" class="sw">&nbsp;</div>
-               <div id="mph"></div>
+               <div id="mph">6 mph</div>
             </section>
             <!-- <div id="dialBlah" class="Sw"> -->
 
             <!-- </div> -->
             <ul class="speed">
-               <li id="direction"></li>
-               <li id="gusts"></li>
+               <li id="direction"> S </li>
+               <li id="gusts"><Strong>Gusts: </Strong>Null</li>
             </ul>
          </section>
 
@@ -76,7 +76,7 @@
 
       <section id="hourly">
          <h2><strong>Hourly Forcast</strong></h2>
-         <ul id = "hourlyData">
+         <ul id="hourlyData">
 
          </ul>
 
@@ -85,8 +85,8 @@
    <footer>
       &copy;2019 &mdash; The Weather Site
    </footer>
-   <script src="/weather/localweather/js/local_weather_functions.js" rel="javascript" type="text/javascript"> </script>
    <script src="/weather/localweather/geo_loc.js" rel="javascript" type="text/javascript"></script>
+   <script src="/weather/localweather/js/local_weather_functions.js" rel="javascript" type="text/javascript"> </script>
 
 </body>
 
