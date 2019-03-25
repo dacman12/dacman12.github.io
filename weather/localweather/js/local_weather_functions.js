@@ -419,8 +419,8 @@ function buildPage() {
    console.log("Sonic the hedgehog is going " + speed);
 
 
-   // let current = storage.getItem("Current");
-   // buildWC(storage.getItem("Wind"), storage.getItem("Current"));
+   let current = storage.getItem("Current");
+   buildWC(storage.getItem("Wind"), storage.getItem("Current"));
 
    // convert celcius to Farenheight
    function convert(temp) {
