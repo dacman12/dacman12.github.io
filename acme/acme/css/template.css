@@ -20,18 +20,7 @@
     height: 5%;
 }
 
-#coyote{
-    background-image: url("/acme/acme/images/site/feature.jpg");
-background-size: cover;
-height: 750px;
-width: 100%;
-}
 
-#rocket{
-    font-size: 25px;
-    justify-content: end;
-    color:#990033;
-}
 
 #heading {
     font-size: 30px;
