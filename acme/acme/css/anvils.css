@@ -20,7 +20,15 @@
     height: 5%;
 }
 
+#all{
+    background-color: #ffffff;
+    margin: 15px;
+}
 
+#path img{
+    width: 50%;
+    height:50%;
+}
 
 #heading {
     font-size: 30px;
@@ -41,7 +49,15 @@ h1 {
     width: 50%;
     height: 5%;
     background-color: #ffffff;
+}
 
+#bodies li{
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#head2{
+    padding-left: 15px;
 }
 
 h1,
@@ -96,25 +112,6 @@ body {
 
 }
 
-#current {
-    font-size: 30px;
-    justify-content: center;
-}
-
-
-#mph {
-    font-size: 28px;
-    margin-top: -85px;
-    margin-right: -5px;
-    align-content: center;
-}
-
-#direction {
-    align-content: center;
-    align-content: flex-end;
-    margin-top: 80px;
-}
-
 #bodies {
     background-image: url("/acme/acme/images/site/background.jpg");
     background-size: cover;
@@ -148,40 +145,18 @@ footer {
 }
 
 
-/* resize images */
-#container img {
-    width: 100px;
-    height: 100px;
+#logo {
+    justify-content: flex-start;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin: 3px;
+    width: 80%;
+    height: 5%;
+    /* background-color: #ffffff; */
 }
 
 footer {
     margin-bottom: 60px;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    top: 50;
-    left: 0;
-    background-color: #de2226;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0%;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
 }
 
 li {

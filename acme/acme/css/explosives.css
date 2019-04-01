@@ -20,15 +20,9 @@
     height: 5%;
 }
 
-#coyote{
-background-image: url("/acme/acme/images/site/feature.jpg");
-background-size: cover;
-height: 750px;
-width: 100%;
-display: flex;
-justify-content: flex-end;
-font-size: 25px;
-color:#990033;
+#all{
+    background-color: #ffffff;
+    margin: 15px;
 }
 
 #heading {
@@ -41,10 +35,6 @@ h1 {
     margin: 0;
 }
 
-#all{
-    background-color: #ffffff;
-    margin: 15px;
-}
 
 #logo {
     justify-content: flex-start;
@@ -57,7 +47,12 @@ h1 {
 
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Sansita', sans-serif;
 }
 
@@ -104,6 +99,25 @@ body {
 
 }
 
+#current {
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+#mph {
+    font-size: 28px;
+    margin-top: -85px;
+    margin-right: -5px;
+    align-content: center;
+}
+
+#direction {
+    align-content: center;
+    align-content: flex-end;
+    margin-top: 80px;
+}
+
 #bodies {
     background-image: url("/acme/acme/images/site/background.jpg");
     background-size: cover;
@@ -119,61 +133,6 @@ body {
 hr {
     height: 3px;
     background-color: #000000;
-}
-
-#pulledPie{
-    display: flex;
-    flex-flow: row;
-    /* text-size-adjust: 5px;
-    align-content: space-between; */
-}
-
-#tacoSoup{
-    display: flex;
-    flex-flow: row;
-}
-
-#recipes{
-    display: flex;
-    flex-flow: wrap;
-    display: grid;
-}
-
-#pulled{
-    color: #0000ee;
-    text-decoration-line: underline;
-}
-
-#potPie{
-    color: #0000ee;
-    text-decoration-line: underline;
-}
-
-#soup{
-    color: #0000ee;
-    text-decoration-line: underline;
-}
-
-#taco{
-    color: #0000ee;
-    text-decoration-line: underline;
-}
-
-#taste{
-    display: flex;
-    flex-direction: column;
-}
-
-.food{
-border-left-width: 20px;
-border-right-width: 20px;
-border-bottom-width: 4px;
-border-top-width: 4px;
-border-style: solid;
-border-color: #808080;
-flex-direction: column;
-justify-content: space-evenly;
-text-decoration-color: #990033;
 }
 
 footer {
@@ -200,6 +159,32 @@ footer {
 
 footer {
     margin-bottom: 60px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 50;
+    left: 0;
+    background-color: #de2226;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0%;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
 }
 
 li {
@@ -261,13 +246,6 @@ li {
 
     li {
         list-style: none;
-    }
-
-    #taste{
-        display: flex;
-        justify-content: space-evenly; 
-        flex-direction: row;
-        /* align-content: space-between; */
     }
 
     /* >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a */

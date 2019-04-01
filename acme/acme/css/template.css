@@ -122,14 +122,20 @@ body {
     font-display: "acme";
 }
 
+#all{
+    background-color: #ffffff;
+    margin: 15px;
+}
+
 #page-main {
     background-color: #ffffff;
-    height: 10%;
+    height: 100px; 
 }
 
 hr {
     height: 3px;
     background-color: #000000;
+
 }
 
 footer {
