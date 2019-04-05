@@ -14,10 +14,10 @@
 /* section 2 - General Rules */
 #page-head {
     padding: 15px;
-    margin-left: 15px;
+    /* margin-left: 15px;
     background-color: #ffffff;
     width: 95%;
-    height: 5%;
+    height: 5%; */
 }
 
 #all{
@@ -36,12 +36,6 @@
     justify-content: flex-end;
 }
 
-#path img{
-    width: 50%;
-    float: left;
-
-}
-
 #heading {
     font-size: 30px;
     margin: 0px;
@@ -53,7 +47,7 @@ h1 {
 }
 
 
-#logo {
+/* #logo {
     justify-content: flex-start;
     margin-left: 3px;
     margin-top: 3px;
@@ -61,29 +55,13 @@ h1 {
     width: 50%;
     height: 5%;
     background-color: #ffffff;
-}
+} */
 
 #bodies li{
     flex-flow: row;
     flex-wrap: wrap;
 }
-/* 
-#tile{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-}
 
-#picture{
-display: flex;
-justify-content: flex-start;
-}
-
-#information{
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: wrap;
-    } */
 
 #head2{
     padding-left: 15px;
@@ -127,11 +105,13 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
 }
+#price{
+    color: red;
+}
 
 li {
     list-style: none;
 }
-
 
 body {
     /* font-size:1.5em; same as font-size: 18px */
@@ -167,22 +147,22 @@ footer {
 
 #page-head {
     padding: 15px;
-    margin-left: 15px;
+    /* margin-left: 15px;
     background-color: #ffffff;
     width: 95%;
-    height: 5%;
+    height: 5%; */
 }
 
 
-#logo {
+/* #logo {
     justify-content: flex-start;
     margin-left: 3px;
     margin-top: 3px;
     margin: 3px;
     width: 80%;
     height: 5%;
-    /* background-color: #ffffff; */
-}
+    background-color: #ffffff;
+} */
 
 footer {
     margin-bottom: 60px;
@@ -190,6 +170,20 @@ footer {
 
 li {
     list-style: none;
+}
+
+#path img{
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+
+}
+
+#tile{
+    flex-flow: wrap;
+    align-content: space-around;
+    font-size: 13.5px;
+    font-weight: bold;
 }
 
 /* Section 4 - Larger Screens */
@@ -247,6 +241,17 @@ li {
 
     li {
         list-style: none;
+    }
+
+    #path img{
+        width: 100%;
+        float: left;
+    }
+
+    #tile{
+        flex-flow: wrap;
+        align-content: space-around;
+        font-size: 25px;
     }
 
     /* >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a */
