@@ -25,9 +25,21 @@
     margin: 15px;
 }
 
+#content{
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: wrap; */
+}
+
+#information{
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
 #path img{
     width: 50%;
-    height:50%;
+    float: left;
+
 }
 
 #heading {
@@ -55,6 +67,23 @@ h1 {
     flex-flow: row;
     flex-wrap: wrap;
 }
+/* 
+#tile{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+#picture{
+display: flex;
+justify-content: flex-start;
+}
+
+#information{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: wrap;
+    } */
 
 #head2{
     padding-left: 15px;

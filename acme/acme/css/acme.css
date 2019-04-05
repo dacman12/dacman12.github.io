@@ -20,16 +20,19 @@
     height: 5%;
 }
 
-#coyote{
+/* #coyote{
+position: relative;
 background-image: url("/acme/acme/images/site/feature.jpg");
 background-size: cover;
-height: 750px;
+height:750px;
 width: 100%;
 display: flex;
 justify-content: flex-end;
 font-size: 25px;
 color:#990033;
-}
+} */
+
+
 
 #heading {
     font-size: 30px;
@@ -39,11 +42,6 @@ color:#990033;
 
 h1 {
     margin: 0;
-}
-
-#all{
-    background-color: #ffffff;
-    margin: 15px;
 }
 
 #logo {
@@ -105,10 +103,22 @@ body {
 }
 
 #bodies {
+    width:90%;
     background-image: url("/acme/acme/images/site/background.jpg");
     background-size: cover;
     margin: .2em auto;
     font-display: "acme";
+
+}
+
+#getIt {
+    width: auto;
+    height:auto
+}
+
+#container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 #page-main {
@@ -135,8 +145,10 @@ hr {
 
 #recipes{
     display: flex;
-    flex-flow: wrap;
-    display: grid;
+    /* flex-flow: wrap; */
+    /* display: grid; */
+    flex-flow: column;
+    justify-content: flex-start;
 }
 
 #pulled{
@@ -159,21 +171,36 @@ hr {
     text-decoration-line: underline;
 }
 
-#taste{
+#foods{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .food{
-border-left-width: 20px;
-border-right-width: 20px;
+/* border-left-width: 100px;
+border-right-width: 100px;
 border-bottom-width: 4px;
-border-top-width: 4px;
+border-top-width: 4px; */
 border-style: solid;
 border-color: #808080;
-flex-direction: column;
+flex-direction: row-reverse;
 justify-content: space-evenly;
 text-decoration-color: #990033;
+}
+
+.grey{
+    background: #808080;
+}
+
+table{
+    text-align: center;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
 }
 
 footer {
@@ -191,11 +218,33 @@ footer {
     height: 5%;
 }
 
+#coyote{
+    position: relative;
+    background-image: url("/acme/acme/images/site/feature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:220px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color:#990033;
+    }
+
+#rocket{
+    background-color: rbga(255, 255, 255, 0.3);
+    font-size: 2vw;
+}
+
+/* #getIt{
+    width:10%;
+    height: 10px;
+} */
 
 /* resize images */
 #container img {
-    width: 100px;
-    height: 100px;
+    width: 100px; 
+     /* height: 100px; */
 }
 
 footer {
@@ -204,6 +253,17 @@ footer {
 
 li {
     list-style: none;
+}
+
+#taste{
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* Section 4 - Larger Screens */
@@ -216,6 +276,23 @@ li {
     left: 0; */
         background-color: #de2226;
     }
+
+    #coyote{
+        position: relative;
+        background-image: url("/acme/acme/images/site/feature.jpg");
+        background-size: cover;
+        height:750px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        color:#990033;
+        }
+
+        #container img {
+            width: 250px; 
+             /* height: 100px; */
+        }
 
     nav ul {
         display: flex;
@@ -265,10 +342,19 @@ li {
 
     #taste{
         display: flex;
-        justify-content: space-evenly; 
         flex-direction: row;
         /* align-content: space-between; */
     }
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
+}
+    #rocket{
+        background-color: transparent;
+}
 
     /* >>>>>>> f80d0e3220d2a52ded45e9561f70eed9ebf2603a */
 }
