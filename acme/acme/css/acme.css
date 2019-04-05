@@ -14,10 +14,7 @@
 /* section 2 - General Rules */
 #page-head {
     padding: 15px;
-    margin-left: 15px;
     background-color: #ffffff;
-    width: 95%;
-    height: 5%;
 }
 
 /* #coyote{
@@ -210,16 +207,8 @@ footer {
 
 /* Section 3 -Mobile First Rules */
 
-#page-head {
-    padding: 15px;
-    margin-left: 15px;
-    background-color: #ffffff;
-    width: 95%;
-    height: 5%;
-}
-
 #coyote{
-    position: relative;
+    /* position: relative; */
     background-image: url("/acme/acme/images/site/feature.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,11 +218,14 @@ footer {
     justify-content: flex-end;
     font-size: 12px;
     color:#990033;
+
     }
 
 #rocket{
-    background-color: rbga(255, 255, 255, 0.3);
+    background-color: #f7f7f785;
     font-size: 2vw;
+    width: 30%;
+    height: 100px;
 }
 
 /* #getIt{
