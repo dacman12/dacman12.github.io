@@ -1,6 +1,7 @@
 let URL = "/acme.json";
 
 buildNav(URl);
+getContent(URL);
 
 function buildNav(URL) {
    
@@ -28,4 +29,7 @@ function buildNav(URL) {
         })
 }
 
-function
+function getContent(URL){
+    
+
+}
