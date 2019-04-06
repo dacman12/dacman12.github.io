@@ -283,10 +283,10 @@ li {
         color:#990033;
         }
 
-        #container img {
+         #container img {
             width: 250px; 
-             /* height: 100px; */
-        }
+            /* height: 100px;  */
+        } 
 
     nav ul {
         display: flex;
