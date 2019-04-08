@@ -8,7 +8,7 @@
 
 /* Section 1 - Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
-@import url('https://fonts.google.com/specimen/Homemade+Apple');
+/* @import url('https://fonts.google.com/specimen/Homemade+Apple'); */
 @import url('normalize.css');
 
 /* section 2 - General Rules */
@@ -119,7 +119,7 @@ body {
     background-image: url("/acme/acme/images/site/background.jpg");
     background-size: cover;
     margin: .2em auto;
-    font-display: "acme";
+    /* font-display: "acme"; */
 }
 
 #all{
@@ -167,7 +167,7 @@ footer {
 nav {
     position: fixed;
     width: 100%;
-    top: 50;
+    /* top: 50; */
     left: 0;
     background-color: #de2226;
 }
