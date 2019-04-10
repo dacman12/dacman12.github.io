@@ -8,16 +8,16 @@
 
 /* Section 1 - Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
-@import url('https://fonts.google.com/specimen/Homemade+Apple');
+/* @import url('https://fonts.google.com/specimen/Homemade+Apple'); */
 @import url('normalize.css');
 
 /* section 2 - General Rules */
 #page-head {
-    padding: 15px;
-    /* margin-left: 15px;
+    /* padding: 15px;
+    margin-left: 15px; */
     background-color: #ffffff;
-    width: 95%;
-    height: 5%; */
+    width: 97.5%;
+    height: 5%; 
 }
 
 #all{
@@ -78,7 +78,7 @@ h6 {
 
 nav {
     /* position: top; */
-    width: 100%;
+    width: 95%;
     height: 30px;
     justify-content: center;
     /* bottom: 0;
@@ -122,10 +122,17 @@ body {
 }
 
 #bodies {
+    width:95%;
     background-image: url("/acme/images/site/background.jpg");
     background-size: cover;
     margin: .2em auto;
+    background-color: #ffffff;
     /* font-display: "acme"; */
+}
+
+#all{
+    background-color: #ffffff;
+    margin: 15px;
 }
 
 #page-main {

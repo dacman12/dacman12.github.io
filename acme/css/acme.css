@@ -100,13 +100,17 @@ body {
 }
 
 #bodies {
-    width:90%;
+    width:95%;
     background-image: url("/acme/images/site/background.jpg");
     background-size: cover;
     margin: .2em auto;
     /* font-display: "acme"; */
     background-color: #ffffff;
+}
 
+#all{
+    background-color: #ffffff;
+    margin: 15px;
 }
 
 #getIt {
