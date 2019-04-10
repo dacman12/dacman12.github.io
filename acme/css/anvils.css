@@ -122,7 +122,7 @@ body {
 }
 
 #bodies {
-    background-image: url("/acme/acme/images/site/background.jpg");
+    background-image: url("/acme/images/site/background.jpg");
     background-size: cover;
     margin: .2em auto;
     /* font-display: "acme"; */
